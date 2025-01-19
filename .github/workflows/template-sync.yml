@@ -1,6 +1,6 @@
-# see: https://github.com/AndreasAugustin/actions-template-sync
-
 name: template_sync
+
+# see: https://github.com/AndreasAugustin/actions-template-sync
 
 on: 
     # cronjob trigger
