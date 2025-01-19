@@ -2,6 +2,9 @@ name: template_sync
 
 # see: https://github.com/AndreasAugustin/actions-template-sync
 
+permissions:
+  actions: write
+
 on: 
     # cronjob trigger
     schedule:
