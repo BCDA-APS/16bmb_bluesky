@@ -13,7 +13,7 @@ on:
       #     description: "Check for template update"
       #     type: boolean
       #     required: true
-          default: false
+      #     default: false
   
   jobs:
     repo-sync:
