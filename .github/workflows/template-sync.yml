@@ -1,6 +1,6 @@
-# see: https://github.com/AndreasAugustin/actions-template-sync
+name: template_sync
 
-name: template-sync
+# see: https://github.com/AndreasAugustin/actions-template-sync
 
 on: push
 
