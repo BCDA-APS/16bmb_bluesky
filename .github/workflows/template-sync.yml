@@ -2,21 +2,13 @@ name: template_sync
 
 # see: https://github.com/AndreasAugustin/actions-template-sync
 
-permissions:
-  actions: write
-
 on: 
     # cronjob trigger
     schedule:
-    - cron: "0 0 1 * *"
+      # 12:01 AM on the first day of the month
+    - cron: "1 0 1 * *"
     # manual trigger
     workflow_dispatch:
-      # inputs:
-      #   deploy:
-      #     description: "Check for template update"
-      #     type: boolean
-      #     required: true
-      #     default: false
   
 jobs:
   repo-sync:
