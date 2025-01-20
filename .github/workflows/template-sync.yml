@@ -8,7 +8,7 @@ on:
       # 12:01 AM on the first day of the month
     - cron: "1 0 1 * *"
     # manual trigger
-    workflow_dispatch:
+    # workflow_dispatch:
   
 jobs:
   repo-sync:
