@@ -2,14 +2,17 @@ name: template_sync
 
 # see: https://github.com/AndreasAugustin/actions-template-sync
 
-on: 
+on:
     # cronjob trigger
     schedule:
-      # 12:01 AM on the first day of the month
-    - cron: "1 0 1 * *"
+      # 12:10 AM on the first day of every month
+    - cron: "10 0 1 * *"
     # manual trigger
     workflow_dispatch:
-  
+
+env:
+  TEMPLATE_REPO: BCDA-APS/bs_model_instrument
+
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
@@ -27,5 +30,5 @@ jobs:
       - name: actions-template-sync
         uses: AndreasAugustin/actions-template-sync@v2
         with:
-          source_repo_path: BCDA-APS/bs_model_instrument
+          source_repo_path: ${{ env.TEMPLATE_REPO }}
           upstream_branch: main
