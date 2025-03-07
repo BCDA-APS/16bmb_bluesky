@@ -6,7 +6,7 @@ Bluesky Data Acquisition support for APS 16-BM-B
 
 ## Template repository
 
-Created from 
+Created from
 :template: https://github.com/BCDA-APS/bits
 
 ## Conda environment.
