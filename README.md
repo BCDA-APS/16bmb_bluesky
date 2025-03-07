@@ -1,20 +1,15 @@
-# BITS: Template Package for Bluesky Instruments
+# 16-BM-B Bluesky Instrument
 
 BITS: **B**luesky **I**nstrument **T**emplate**S**
 
-Template of a Bluesky Data Acquisition Instrument in console, notebook, &
-queueserver.
+Bluesky Data Acquisition support for APS 16-BM-B
 
-## Installation
+## Template repository
 
-Clone the repository.
+Created from 
+:template: https://github.com/BCDA-APS/bits
 
-```bash
-git clone git@github.com:BCDA-APS/bs_model_instrument.git
-cd bs_model_instrument
-```
-
-Set up the development environment.
+## Conda environment.
 
 ```bash
 export ENV_NAME=bits
